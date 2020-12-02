@@ -1,0 +1,54 @@
+Este trabalho é individual. O arquivo fonte deve ser nomeado no seguinte padrão: trab4-nome.c. Dentro do arquivo fonte, deve ter um cabeçalho com o ra
+ e nome completo do autor.
+
+Você deve implementar um programa que lê a quantidade e os elementos de um vetor (tamanho máximo 1000) e insere mais 10 elementos lidos no inicio do vetor,
+ insere mais 5 elementos lidos no final do vetor, insere um elemento lido no meio do vetor e remove todos os elementos que estão em uma posição múltiplo de 
+10 no vetor original. Como saída, você deve imprimir todos os elementos do vetor após todas as operações. Para implementar esse trabalho você deve 
+OBRIGATÓRIAMENTE implementar e usar as funções abaixo:
+
+
+// insere n elementos lidos no vetor
+void le_vet(int v[], int n);
+// insere o elemento elem no inicio do vetor e retorna o numero de elementos apos a insercao
+int insere_inicio(int v[], int elem, int n);
+// insere o elemento elem no fim do vetor e retorna o numero de elementos apos a insercao
+int insere_fim(int v[], int elem, int n);
+// insere o elemento elem no meio do vetor e retorna o numero de elementos apos a insercao
+int insere_meio(int v[], int elem, int n);
+// remove o elemento que esta na posicao pos no vetor e retorna 1 se a remocao foi realizada com sucesso ou 0 caso contrario
+int remove_pos(int v[], int pos, int n);
+// imprime todos os elementos do vetor
+void imprime_vetor(int v[], int n);
+
+Exemplo 1
+Entrada:
+4
+1 2 3 4
+1 2 3 4 5 6 7 8 9 10
+6 6 6 6 6
+9
+
+Saída
+10 9 8 7 6 5 4 3 2 9 1 2 3 4 6 6 6 6 6
+
+Exemplo 2
+Entrada
+3
+1 2 3
+1 2 3 4 5 6 7 8 9 10
+6 6 6 6 6
+9
+
+Saída
+10 9 8 7 6 5 4 3 2 9 1 2 3 6 6 6 6 6
+
+Exemplo 3
+Entrada
+6
+1 2 3 4 5 6
+1 2 3 4 5 6 7 8 9 10
+1 2 3 4 5
+9
+
+Saída
+10 9 8 7 6 5 4 3 2 1 1 2 3 4 5 6 1 2 3 5
