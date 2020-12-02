@@ -1,0 +1,26 @@
+//Marco Beraldi
+//BCC - UFSCar 2011
+//Trecho
+//Verifica se o jogador 1 ganhou o jogo considerando as linhas da matriz
+					if(mat[aux][col] == mat[aux+1][col] && mat[aux][col] == mat[aux+2][col] && mat[aux][col] == mat[aux+3][col] && aux>=0)
+					{
+						vit_jog1 = 1;
+					}//fim if
+					
+					//Verifica se o jogador 1 ganhou considerando as colunas da matriz
+					if(mat[aux][col] == mat[aux][col-1] && mat[aux][col] == mat[aux][col-2] && mat[aux][col] == mat[aux][col-3])
+					{
+						vit_jog1 = 1;
+					}//fim if
+					if(mat[aux][col] == mat[aux][col+1] && mat[aux][col] == mat[aux][col+2] && mat[aux][col] == mat[aux][col+3])
+					{
+						vit_jog1 = 1;
+					}//fim if
+					if(mat[aux][col] == mat[aux][col-1] && mat[aux][col] == mat[aux][col-2] && mat[aux][col] == mat[aux][col+1])
+					{
+						vit_jog1 = 1;
+					}//fim if
+					if(mat[aux][col] == mat[aux][col-1] && mat[aux][col] == mat[aux][col+1] && mat[aux][col] == mat[aux][col+2])
+					{
+						vit_jog1 = 1;
+					}//fim if
